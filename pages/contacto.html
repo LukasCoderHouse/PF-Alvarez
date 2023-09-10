@@ -53,38 +53,34 @@
     </nav>
     <!-- Finaliza navbar-->
     <!-- Inicia jumbotron -->
-    <main class="p-5">
+    <main id="contacto" class="p-5">
         <h1><strong>Contacto</strong></h1><br>
         <section>
             <div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <form method="post" data-form-title="CONTACT US">
-                                    <input type="hidden" data-form-email="true">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" required=""
-                                            placeholder="Nombre*" data-form-field="Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" required=""
-                                            placeholder="Email*" data-form-field="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" name="phone" placeholder="Teléfono"
-                                            data-form-field="Phone">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" placeholder="Mensaje" rows="7"
-                                            data-form-field="Message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-lg btn-danger">ENVIAR CONSULTA</button>
-                                    </div>
-                                </form>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                        <form method="post" data-form-title="CONTACT US">
+                            <input type="hidden" data-form-email="true">
+                            <div class="mb-3 form-group">
+                                <input type="text" class="form-control" name="name" required="" placeholder="Nombre*"
+                                    data-form-field="Name">
                             </div>
-                        </div>
+                            <div class="mb-3 form-group">
+                                <input type="email" class="form-control" name="email" required="" placeholder="Email*"
+                                    data-form-field="Email">
+                            </div>
+                            <div class="mb-3 form-group">
+                                <input type="tel" class="form-control" name="phone" placeholder="Teléfono"
+                                    data-form-field="Phone">
+                            </div>
+                            <div class="mb-3 form-group">
+                                <textarea class="form-control" name="message" placeholder="Mensaje" rows="7"
+                                    data-form-field="Message"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-lg btn-danger">ENVIAR CONSULTA</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
