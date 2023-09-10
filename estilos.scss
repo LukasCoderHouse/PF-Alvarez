@@ -1,0 +1,110 @@
+/* Altura barra de navegación */
+nav {
+  height: 10vh;
+  background-color: black;
+
+  /* Modificar tamaño imagen del logo */
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  /* Cambiar color barra de navegación */
+  .nav-link {
+    color: rgb(168, 240, 13) !important;
+  }
+}
+
+
+/* Imagen de fondo home */
+main {
+  background-image: url(img/fondo-tornillos.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* jumbotron */
+.jumbotron {
+  width: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(3, 240, 229);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  color: rgb(201, 244, 12);
+}
+
+/* Estilos iconos redes en footer */
+.footer {
+  background-color: beige;
+  color: rgb(255, 6, 222);
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Color para texto "Copyright" */
+.footer2 {
+  color: brown;
+}
+
+/* Estilo para texto "seguinos en nuestras redes" */
+.footer3 {
+  text-transform: uppercase;
+  -webkit-text-size-adjust: 15px;
+  -moz-text-size-adjust: 15px;
+  text-size-adjust: 15px;
+  margin-bottom: 5px;
+  color: rgb(107, 7, 247);
+}
+
+/* media query */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  main {
+    height: auto;
+  }
+
+  footer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    background-color: black;
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+/* Inicio de página "quienes-somos" */
+#quienes-somos p {
+  color: rgb(12, 120, 12);
+  font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  #quienes-somos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+
+/* página dónde estamos?*/
+.ubicacion {
+  text-indent: 10px;
+  font-size: 25px;
+  color: rgb(241, 10, 141);
+}
+
+/* página contacto*/
