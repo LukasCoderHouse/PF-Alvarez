@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,600;0,700;1,500;1,600;1,700&display=swap');
 
 /* Altura barra de navegación */
 nav {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
   height: 10vh;
   background-color: black;
 
@@ -11,27 +13,37 @@ nav {
   }
 
   /* Cambiar color barra de navegación */
-  .nav-link {
+
+  .nav-link:hover {
     color: rgb(168, 240, 13) !important;
   }
 }
 
 /* main todas las páginas */
 main {
-  background-image: url(img/fondo-tornillos.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #ccc5c5;
+
 
   h1 {
     text-align: center;
-    color: rgb(3, 240, 229);
-    font-family: "Josefin Sans", sans-serif;
+    color: #de4753;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
+    font-family: 'Josefin Sans', sans-serif;
+
   }
 
   p {
+    font-size: 1.5rem;
     color: rgb(201, 244, 12);
+    text-align: justify;
   }
+}
+
+#home {
+  background-image: url(img/BG-1.jpg);
 }
 
 /* Estilos iconos redes en footer */
@@ -43,6 +55,11 @@ footer {
   font-size: 25px;
   width: 100%;
   bottom: 0;
+
+  i:hover {
+    margin: 0 10px;
+    transform: scale(2);
+  }
 
   /* Color para texto "Copyright" */
   .footer2 {
@@ -62,8 +79,17 @@ footer {
 
 /* media query */
 @media only screen and (min-width: 0) and (max-width: 576px) {
+  nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   main {
     height: auto;
+
+    p {
+      font-size: 16px;
+    }
   }
 
   footer {
@@ -77,23 +103,37 @@ footer {
     background-color: black;
     display: flex;
     justify-content: center !important;
+    z-index: 10;
   }
 }
 
 /* Inicio de página "quienes-somos" */
 #quienes-somos {
+  background-color: #ccc5c5;
+  background-image: url(img/BG-2.jpg);
+  background-position: right;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 576px) {
+    background-repeat: repeat-y;
+    height: auto;
+  }
 
   h1 {
     text-align: center;
-    color: rgb(18, 14, 247);
+    color: #de4753;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
     font-family: "Josefin Sans", sans-serif;
   }
 
-  background-color: white;
-
   p {
-    color: rgb(12, 120, 12);
+    font-size: 1rem;
+    color: whitesmoke;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
     font-family: "Oswald", sans-serif;
+    text-align: justify;
   }
 
   .row {
@@ -115,9 +155,14 @@ footer {
 /* página productos*/
 
 #productos {
-  background-image: url(img/herramientas.jpg);
+  background-image: url(img/BG-3.jpg);
   opacity: 0.90;
-  text-shadow: -1px 2px 0px rgba(13, 220, 65, 0.77);
+
+  h2,
+  h3 {
+    color: #de4753;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
+  }
 
   iframe {
     width: 560px;
@@ -135,16 +180,21 @@ footer {
     }
   }
 
-  p {
+  ol {
+    color: yellow;
     font-size: 16px;
   }
 }
 
 /* página ubicacion */
 #ubicacion {
-  background-image: url(img/francesa.jpg);
+  background-image: url(img/BG-4.jpg);
   opacity: 0.90;
-  text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
+
+  p {
+    color: yellow;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
+  }
 
   iframe {
     width: 950px;
@@ -166,9 +216,8 @@ footer {
 
 /* página contacto */
 #contacto {
-  background-image: url(img/madera.jpg);
+  background-image: url(img/BG-5.jpg);
   opacity: 0.90;
-  text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.886);
 
   @media (max-width: 576px) {
     display: flex;
